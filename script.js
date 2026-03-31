@@ -11,7 +11,7 @@ function showSection(id) {
 }
 
 /* Typing Effect */
-const text = ["Web Developer 💻", "UI Designer 🎨", "Freelancer 🚀"];
+const text = ["Web Developer 💻", "Meowww 🎨", "Meow🚀"];
 let i = 0;
 let j = 0;
 let currentText = "";
