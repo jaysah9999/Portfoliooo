@@ -240,3 +240,72 @@ margin-top: 10px;
 background: linear-gradient(90deg, #00ff80, #00ffff)
 box-shadow: 0 5px 15px #00ffff80;
 }
+
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Base Style */
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow effect */
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+  top: -100%;
+  left: 0;
+  transition: 0.5s;
+}
+
+.social-icons a:hover::before {
+  top: 100%;
+}
+
+/* Hover Animation */
+.social-icons a:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Brand Colors on Hover */
+.social-icons a.twitter:hover {
+  background: #000;
+  box-shadow: 0 0 15px #000;
+}
+
+.social-icons a.facebook:hover {
+  background: #1877f2;
+  box-shadow: 0 0 15px #1877f2;
+}
+
+.social-icons a.instagram:hover {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  box-shadow: 0 0 15px #ee2a7b;
+}
+
+.social-icons a.linkedin:hover {
+  background: #0a66c2;
+  box-shadow: 0 0 15px #0a66c2;
+  }
